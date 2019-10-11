@@ -1,0 +1,365 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/designChill.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<title>Chill Book Store</title>
+</head>		
+<body>
+<div class="top-nav">
+<div class="search-box">
+
+<img src="images/logo.png" class="logo">
+
+<input type="text" class="form-control" placeholder="Nhập sách bạn cần tìm">
+<div><span class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i>Tìm kiếm</span></div>
+</div>
+<div class="menu-bar">
+<ul>
+<li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Trang chủ</a></li>
+<li><a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i>Giới Thiệu</a></li>
+<li><a href="FrmDangNhap1.html" target="_blank"><i class="fa fa-sign-in" aria-hidden="true"></i>Đăng nhập</a></li>
+<li><a href="FrmDangKy.html" target="_blank"><i class="fa fa-address-book-o" aria-hidden="true"></i>Đăng kí</a></li>
+<li><a href="https://www.facebook.com/nhoxsieuquay.nhox.1" target="_blank"><i class="fa fa-comments" aria-hidden="true"></i>Liên hệ</a></li>
+</ul>
+</div>
+</div>
+
+<section class="header">
+<!--------------------------------MENU Sản phẩm------------------------------------------------------>
+    <div class="side-menu">
+    <div class="Sanpham"><li>Sản Phẩm</li></div>
+    <ul>
+    	<li>On sale<i class="fa fa-angle-right" aria-hidden="true"></i>
+        <ul>
+        <li>Sub-menu1</li>
+        <li>Sub-menu2</li>
+        <li>Sub-menu3</li>
+        </ul>
+        </li>
+        <li>Sách tiếng việt<i class="fa fa-angle-right" aria-hidden="true"></i>
+        <ul>
+        <li>Sub-menu1</li>
+        <li>Sub-menu2</li>
+        <li>Sub-menu3</li>
+        </ul>
+        </li>
+        <li>Sách ngoại văn<i class="fa fa-angle-right" aria-hidden="true"></i>
+        <ul>
+        <li>Sub-menu1</li>
+        <li>Sub-menu2</li>
+        <li>Sub-menu3</li>
+        </ul>
+        </li>
+        <li>Sách theo nhà cung cấp<i class="fa fa-angle-right" aria-hidden="true"></i>
+        <ul>
+        <li>Sub-menu1</li>
+        <li>Sub-menu2</li>
+        <li>Sub-menu3</li>
+        </ul>
+        </li>
+        <li>Chill book store khuyên đọc<i class="fa fa-angle-right" aria-hidden="true"></i>
+        <ul>
+        <li>Sub-menu1</li>
+        <li>Sub-menu2</li>
+        <li>Sub-menu3</li>
+        </ul>
+        </li>
+    </ul>
+         <div class="container" style="text-align:center;margin-top:40px">
+          <h2>Colored Spinners</h2>                                        
+            <div class="spinner-grow text-muted"></div>
+            <div class="spinner-grow text-primary"></div>
+            <div class="spinner-grow text-success"></div>
+            <div class="spinner-grow text-info"></div>
+            <div class="spinner-grow text-warning"></div>
+            <div class="spinner-grow text-danger"></div>
+            <div class="spinner-grow text-secondary"></div>
+            <div class="spinner-grow text-dark"></div>
+            <div class="spinner-grow text-light"></div>
+          </div>
+    </div>
+<!------------------------------------ Sì lai ---------------------------------------------->
+   <div class="slider">
+              <section>
+                              <a href="#"><img class="mySlides" src="images/bannerChill.jpg"></a>
+                              <a href="#"><img class="mySlides" src="images/NCC_T10_915x423.png"></a>  
+                              <a href="#"><img class="mySlides" src="images/Phu_nu_dep___ban_linh_915x423.png"></a>
+                              <a href="#"><img class="mySlides" src="images/top-100-915X423.jpg"></a>
+                              <a href="#"><img class="mySlides" src="images/langmaster.jpg"></a>
+              </section> 
+              <script>
+              // Automatic Slideshow - change image every 3 seconds
+              var myIndex = 0;
+              carousel();
+              
+              function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}
+                x[myIndex-1].style.display = "block";
+                setTimeout(carousel, 3000);
+              }
+              </script>
+   </div>
+</section>
+<!-----------------------------------SANPHAM------------------------------------------------------------------>
+<section class="sanpham">
+	<div class="container">
+    <div class="col-12">
+    <div class="row">
+        <div class="col-md-3">
+        <img src="images/71587952_451514702132059_2700079715170910208_n.png">
+        <div class="product-bottom">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <h3>Sách gì đó</h3>
+                <h5>4 triệu vnd</h5>
+                </div>
+        </div>
+        <div class="col-md-3">
+        <img src="images/71636736_2413909828646419_1328851014387761152_n.png">
+        <div class="product-bottom">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <h3>Sách gì đó</h3>
+                <h5>4 triệu vnd</h5>
+                </div>
+        </div>
+        <div class="col-md-3">
+        <img src="images/71796954_437548680442266_2229756465269178368_n.png">
+        <div class="product-bottom">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <h3>Sách gì đó</h3>
+                <h5>4 triệu vnd</h5>
+                </div>
+        </div>
+        <div class="col-md-3">
+        <img src="images/71587952_451514702132059_2700079715170910208_n.png">
+        <div class="product-bottom">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <h3>Sách gì đó</h3>
+                <h5>4 triệu vnd</h5>
+                </div>
+        </div>
+        <div class="col-md-3">
+        <img src="images/71755021_502734006950377_5114076494888435712_n.png">
+        <div class="product-bottom">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <h3>Sách gì đó</h3>
+                <h5>4 triệu vnd</h5>
+                </div>
+        </div>
+        <div class="col-md-3">
+        <img src="images/71755021_502734006950377_5114076494888435712_n.png">
+        <div class="product-bottom">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <h3>Sách gì đó</h3>
+                <h5>4 triệu vnd</h5>
+                </div>
+        </div>
+        <div class="col-md-3">
+        <img src="images/71755021_502734006950377_5114076494888435712_n.png">
+        <div class="product-bottom">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <h3>Sách gì đó</h3>
+                <h5>4 triệu vnd</h5>
+                </div>
+        </div>
+        <div class="col-md-3">
+        <img src="images/71755021_502734006950377_5114076494888435712_n.png">
+        <div class="product-bottom">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <h3>Sách gì đó</h3>
+                <h5>4 triệu vnd</h5>
+                </div>
+        </div>
+        <div class="col-md-3">
+        <img src="images/71755021_502734006950377_5114076494888435712_n.png">
+        <div class="product-bottom">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <h3>Sách gì đó</h3>
+                <h5>4 triệu vnd</h5>
+                </div>
+        </div>
+	</div>
+    </div>
+	</div>
+</section>
+<!------HOT---------------------------------------------------------------------------------------------->
+<section class="hot">
+	<div class="container">
+        <div class="title-box">
+        <h2>HOT</h2>
+        </div>
+        <div class="col-12">
+        <div class="row">
+        	<div class="col-md-3">
+        		<div class="product-top">
+        		<img src="images/71796954_437548680442266_2229756465269178368_n.png" width="80%">
+                	<div class="overlay-right">
+                        <button type="button" class="btn btn-outline-primary" title="Xem nhanh">            
+                        <i class="fa fa-eye"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-primary" class="yt" title="Yêu thích">
+                        <i class="fa fa-heart-o"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-primary" class="gio"  title="Thêm vào giỏ">
+                        <i class="fa fa-shopping-cart"></i>
+                        </button>
+                                        </div>
+                                </div>
+                        <div class="product-bottom">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <h3>Sách gì đó</h3>
+                        <h5>4 triệu vnd</h5>
+                        </div>
+                </div>
+                <div class="col-md-3">
+                                <div class="product-top">
+                                <img src="images/71796954_437548680442266_2229756465269178368_n.png" width="80%">
+                                <div class="overlay-right">
+                                <button type="button" class="btn btn-outline-primary" title="Xem nhanh">            
+                                <i class="fa fa-eye"></i>
+                                </button>
+                                <button type="button" class="btn btn-outline-primary" class="yt" title="Yêu thích">
+                                <i class="fa fa-heart-o"></i>
+                                </button>
+                                <button type="button" class="btn btn-outline-primary" class="gio"  title="Thêm vào giỏ">
+                                <i class="fa fa-shopping-cart"></i>
+                                </button>
+                                                </div>
+                                        </div>
+                                <div class="product-bottom">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <h3>Sách gì đó</h3>
+                                <h5>4 triệu vnd</h5>
+                                </div>
+                        </div>
+                        <div class="col-md-3">
+        		<div class="product-top">
+        		<img src="images/71796954_437548680442266_2229756465269178368_n.png" width="80%">
+                	<div class="overlay-right">
+                        <button type="button" class="btn btn-outline-primary" title="Xem nhanh">            
+                        <i class="fa fa-eye"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-primary" class="yt" title="Yêu thích">
+                        <i class="fa fa-heart-o"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-primary" class="gio"  title="Thêm vào giỏ">
+                        <i class="fa fa-shopping-cart"></i>
+                        </button>
+                                        </div>
+                                </div>
+                        <div class="product-bottom">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <h3>Sách gì đó</h3>
+                        <h5>4 triệu vnd</h5>
+                        </div>
+                </div>
+                <div class="col-md-3">
+                                <div class="product-top">
+                                <img src="images/71796954_437548680442266_2229756465269178368_n.png" width="80%">
+                                <div class="overlay-right">
+                                <button type="button" class="btn btn-outline-primary" title="Xem nhanh">            
+                                <i class="fa fa-eye"></i>
+                                </button>
+                                <button type="button" class="btn btn-outline-primary" class="yt" title="Yêu thích">
+                                <i class="fa fa-heart-o"></i>
+                                </button>
+                                <button type="button" class="btn btn-outline-primary" class="gio"  title="Thêm vào giỏ">
+                                <i class="fa fa-shopping-cart"></i>
+                                </button>
+                                                </div>
+                                        </div>
+                                <div class="product-bottom">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <h3>Sách gì đó</h3>
+                                <h5>4 triệu vnd</h5>
+                                </div>
+                        </div>          
+        </div>
+        </div>
+        </div>
+</section>
+<!---------------------------------------------------------------------------------------->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">var scrolltotop={setting:{startline:100,scrollto:0,scrollduration:1e3,fadeduration:[500,100]},controlHTML:'<img src="https://i1155.photobucket.com/albums/p559/scrolltotop/arrow201.png" />',controlattrs:{offsetx:5,offsety:5},anchorkeyword:"#top",state:{isvisible:!1,shouldvisible:!1},scrollup:function(){this.cssfixedsupport||this.$control.css({opacity:0});var t=isNaN(this.setting.scrollto)?this.setting.scrollto:parseInt(this.setting.scrollto);t="string"==typeof t&&1==jQuery("#"+t).length?jQuery("#"+t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)},keepfixed:function(){var t=jQuery(window),o=t.scrollLeft()+t.width()-this.$control.width()-this.controlattrs.offsetx,s=t.scrollTop()+t.height()-this.$control.height()-this.controlattrs.offsety;this.$control.css({left:o+"px",top:s+"px"})},togglecontrol:function(){var t=jQuery(window).scrollTop();this.cssfixedsupport||this.keepfixed(),this.state.shouldvisible=t>=this.setting.startline?!0:!1,this.state.shouldvisible&&!this.state.isvisible?(this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]),this.state.isvisible=!0):0==this.state.shouldvisible&&this.state.isvisible&&(this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)},init:function(){jQuery(document).ready(function(t){var o=scrolltotop,s=document.all;o.cssfixedsupport=!s||s&&"CSS1Compat"==document.compatMode&&window.XMLHttpRequest,o.$body=t(window.opera?"CSS1Compat"==document.compatMode?"html":"body":"html,body"),o.$control=t('<div id="topcontrol">'+o.controlHTML+"</div>").css({position:o.cssfixedsupport?"fixed":"absolute",bottom:o.controlattrs.offsety,right:o.controlattrs.offsetx,opacity:0,cursor:"pointer"}).attr({title:"Scroll to Top"}).click(function(){return o.scrollup(),!1}).appendTo("body"),document.all&&!window.XMLHttpRequest&&""!=o.$control.text()&&o.$control.css({width:o.$control.width()}),o.togglecontrol(),t('a[href="'+o.anchorkeyword+'"]').click(function(){return o.scrollup(),!1}),t(window).bind("scroll resize",function(t){o.togglecontrol()})})}};scrolltotop.init();
+jQuery(document).ready(function($){ 
+if (localStorage.getItem('advertOnce') !== 'true') {
+$('body').append('<div id="advert-once" style="position:fixed; bottom: 10px; left: 10px;"><a href="https://www.scrolltotop.com/guide-on-how-to-make-a-website.php" target="_blank" rel="nofollow"><img src="https://i1155.photobucket.com/albums/p559/scrolltotop/makewebsite.png" width="87" height="52" border="0" alt="make a website" /></a><div class="advert-button"></div></div>')
+localStorage.setItem('advertOnce','true');
+} 
+$('#advert-once .advert-button').on('click',function(){
+$('#advert-once').hide();
+}); 
+});
+</script>
+<noscript>Not seeing a <a href="https://www.scrolltotop.com/">Scroll to Top Button</a>? Go to our FAQ page for more info.</noscript>
+
+</body>
+</html>
