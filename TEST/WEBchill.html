@@ -13,6 +13,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Chill Book Store</title>
 </head>		
 <body>
@@ -123,16 +124,29 @@
     <div class="col-12">
     <div class="row">
         <div class="col-md-3">
-        <img src="images/71587952_451514702132059_2700079715170910208_n.png">
-        <div class="product-bottom">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-o"></i>
-                <h3>Sách gì đó</h3>
-                <h5>4 triệu vnd</h5>
+        <div class="product-top">
+                <img src="images/71636736_2413909828646419_1328851014387761152_n.png">
+                <div class="overlay-right">
+                        <button type="button" class="btn btn-outline-primary" title="Xem nhanh">            
+                                <i class="fa fa-eye"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-primary" class="yt" title="Yêu thích">
+                                <i class="fa fa-heart-o"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-primary" class="gio"  title="Thêm vào giỏ">
+                                <i class="fa fa-shopping-cart"></i>
+                        </button>
                 </div>
+                <div class="product-bottom">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                        <h3>Sách gì đó</h3>
+                        <h5>4 triệu vnd</h5>
+                </div>
+        </div>
         </div>
         <div class="col-md-3">
         <img src="images/71636736_2413909828646419_1328851014387761152_n.png">
@@ -234,6 +248,19 @@
     </div>
 	</div>
 </section>
+<!------------------------------------------------------------------------------------------------------->
+<div class="nut">
+<section class="btn-next">
+<div class="container" style=" text-align:center">
+<a href="#" class="previous round">&#8249;</a>
+<a href="#" class="next round">1</a>
+<a href="#" class="next round">2</a>
+<a href="#" class="next round">3</a>
+<a href="#" class="next round">&#8250;</a>
+</div>
+</section>
+</div>
+
 <!------HOT---------------------------------------------------------------------------------------------->
 <section class="hot">
 	<div class="container">
@@ -319,7 +346,7 @@
                 </div>
                 <div class="col-md-3">
                                 <div class="product-top">
-                                <img src="images/71796954_437548680442266_2229756465269178368_n.png" width="80%">
+                                <img src="images/73096718_505526726896196_8408117545344696320_n.jpg">
                                 <div class="overlay-right">
                                 <button type="button" class="btn btn-outline-primary" title="Xem nhanh">            
                                 <i class="fa fa-eye"></i>
@@ -348,7 +375,7 @@
 </section>
 <!---------------------------------------------------------------------------------------->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script type="text/javascript">var scrolltotop={setting:{startline:100,scrollto:0,scrollduration:1e3,fadeduration:[500,100]},controlHTML:'<img src="https://i1155.photobucket.com/albums/p559/scrolltotop/arrow201.png" />',controlattrs:{offsetx:5,offsety:5},anchorkeyword:"#top",state:{isvisible:!1,shouldvisible:!1},scrollup:function(){this.cssfixedsupport||this.$control.css({opacity:0});var t=isNaN(this.setting.scrollto)?this.setting.scrollto:parseInt(this.setting.scrollto);t="string"==typeof t&&1==jQuery("#"+t).length?jQuery("#"+t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)},keepfixed:function(){var t=jQuery(window),o=t.scrollLeft()+t.width()-this.$control.width()-this.controlattrs.offsetx,s=t.scrollTop()+t.height()-this.$control.height()-this.controlattrs.offsety;this.$control.css({left:o+"px",top:s+"px"})},togglecontrol:function(){var t=jQuery(window).scrollTop();this.cssfixedsupport||this.keepfixed(),this.state.shouldvisible=t>=this.setting.startline?!0:!1,this.state.shouldvisible&&!this.state.isvisible?(this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]),this.state.isvisible=!0):0==this.state.shouldvisible&&this.state.isvisible&&(this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)},init:function(){jQuery(document).ready(function(t){var o=scrolltotop,s=document.all;o.cssfixedsupport=!s||s&&"CSS1Compat"==document.compatMode&&window.XMLHttpRequest,o.$body=t(window.opera?"CSS1Compat"==document.compatMode?"html":"body":"html,body"),o.$control=t('<div id="topcontrol">'+o.controlHTML+"</div>").css({position:o.cssfixedsupport?"fixed":"absolute",bottom:o.controlattrs.offsety,right:o.controlattrs.offsetx,opacity:0,cursor:"pointer"}).attr({title:"Scroll to Top"}).click(function(){return o.scrollup(),!1}).appendTo("body"),document.all&&!window.XMLHttpRequest&&""!=o.$control.text()&&o.$control.css({width:o.$control.width()}),o.togglecontrol(),t('a[href="'+o.anchorkeyword+'"]').click(function(){return o.scrollup(),!1}),t(window).bind("scroll resize",function(t){o.togglecontrol()})})}};scrolltotop.init();
+<script type="text/javascript">var scrolltotop={setting:{startline:50,scrollto:0,scrollduration:1e3,fadeduration:[500,100]},controlHTML:'<img src="https://i1155.photobucket.com/albums/p559/scrolltotop/arrow201.png" />',controlattrs:{offsetx:5,offsety:5},anchorkeyword:"#top",state:{isvisible:!1,shouldvisible:!1},scrollup:function(){this.cssfixedsupport||this.$control.css({opacity:0});var t=isNaN(this.setting.scrollto)?this.setting.scrollto:parseInt(this.setting.scrollto);t="string"==typeof t&&1==jQuery("#"+t).length?jQuery("#"+t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)},keepfixed:function(){var t=jQuery(window),o=t.scrollLeft()+t.width()-this.$control.width()-this.controlattrs.offsetx,s=t.scrollTop()+t.height()-this.$control.height()-this.controlattrs.offsety;this.$control.css({left:o+"px",top:s+"px"})},togglecontrol:function(){var t=jQuery(window).scrollTop();this.cssfixedsupport||this.keepfixed(),this.state.shouldvisible=t>=this.setting.startline?!0:!1,this.state.shouldvisible&&!this.state.isvisible?(this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]),this.state.isvisible=!0):0==this.state.shouldvisible&&this.state.isvisible&&(this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)},init:function(){jQuery(document).ready(function(t){var o=scrolltotop,s=document.all;o.cssfixedsupport=!s||s&&"CSS1Compat"==document.compatMode&&window.XMLHttpRequest,o.$body=t(window.opera?"CSS1Compat"==document.compatMode?"html":"body":"html,body"),o.$control=t('<div id="topcontrol">'+o.controlHTML+"</div>").css({position:o.cssfixedsupport?"fixed":"absolute",bottom:o.controlattrs.offsety,right:o.controlattrs.offsetx,opacity:0,cursor:"pointer"}).attr({title:"Scroll to Top"}).click(function(){return o.scrollup(),!1}).appendTo("body"),document.all&&!window.XMLHttpRequest&&""!=o.$control.text()&&o.$control.css({width:o.$control.width()}),o.togglecontrol(),t('a[href="'+o.anchorkeyword+'"]').click(function(){return o.scrollup(),!1}),t(window).bind("scroll resize",function(t){o.togglecontrol()})})}};scrolltotop.init();
 jQuery(document).ready(function($){ 
 if (localStorage.getItem('advertOnce') !== 'true') {
 $('body').append('<div id="advert-once" style="position:fixed; bottom: 10px; left: 10px;"><a href="https://www.scrolltotop.com/guide-on-how-to-make-a-website.php" target="_blank" rel="nofollow"><img src="https://i1155.photobucket.com/albums/p559/scrolltotop/makewebsite.png" width="87" height="52" border="0" alt="make a website" /></a><div class="advert-button"></div></div>')
@@ -359,7 +386,127 @@ $('#advert-once').hide();
 }); 
 });
 </script>
-<noscript>Not seeing a <a href="https://www.scrolltotop.com/">Scroll to Top Button</a>? Go to our FAQ page for more info.</noscript>
+<!-- Footer -->
+<section class="footer" style="border-top: 1px solid #999">
+<!-- Footer -->
+<footer class="page-footer font-small mdb-color lighten-3 pt-4">
 
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Content -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Footer Content</h5>
+        <p>Here you can use rows and columns to organize your footer content.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mb-4">About</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <a href="#!">PROJECTS</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="#!">ABOUT US</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="#!">BLOG</a>
+            </p>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <!---<div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Contact details 
+        <h5 class="font-weight-bold text-uppercase mb-4">Liên hệ</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <i class="fa fa-map-marker" aria-hidden="true"></i> New York, NY 10012, US</p>
+          </li>
+          <li>
+            <p>
+              <i class="fa fa-envelope" aria-hidden="true"></i> chillbook@gmail.com</p>
+          </li>
+          <li>
+            <p>
+              <i class="fa fa-mobile" aria-hidden="true"></i> + 01 234 567 88</p>
+          </li>
+        </ul>
+      </div>
+      <!-- Grid column -->
+      <!--------------------------------------test--------------------------------------->
+<div class="f-col f-col-7 col-sm-6 col-md-3 col-sms-6 col-smb-12">
+<div class="footer-static-title">
+<h3>Liên hệ</h3>
+</div>
+<div class="footer-static-content">
+<ul>
+<li class="first"><em class="fa fa-map-marker">&nbsp;</em><span>Địa Chỉ:</span> <p style="text-align:left">475A Điện Biên Phủ ,P25,Q.Bình Thạnh, TP. HCM</p> </li>
+<li><em class="fa fa-envelope">&nbsp;</em><span>Email:</span>info@fahasa.com</li>
+<li class="last"><em class="fa fa-phone">&nbsp;</em><span>Phone:</span>1900636467</li>
+</ul>
+</div>
+</div>
+<!----------------------------------------------------------------------------------------->
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+<div class="social">
+        <!-- Social buttons -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+
+        <!-- Facebook -->
+        <a type="button" class="btn-floating btn-fb">
+         <a href="#" class="fa fa-facebook"></a>
+        </a>
+        <!-- Twitter -->
+        <a type="button" class="btn-floating btn-tw">
+          <a href="#" class="fa fa-youtube"></a>
+        </a>
+        <!-- Google +-->
+        <a type="button" class="btn-floating btn-gplus">
+          <a href="#" class="fa fa-google"></a>
+        </a>
+      </div>
+      <!-- Grid column -->
+</div>
+    </div>
+    <!-- Grid row -->
+  </div>
+</footer>
+<!-- Footer -->
+</section>
+<div class="footer-copyright text-center py-3" style="background-color:#D7D7D7">© 2019 Copyright:
+    <a href="https://mdbootstrap.com/education/bootstrap/" style="text-decoration:none; color:#009"> ChillBookstore.com </a><i class="fa fa-hand-o-right" aria-hidden="true"></i>Do not view source
+    <img src="images/bo-cong-thuong.svg">
+    <img src="images/bo-cong-thuong-2.png" width="80px" height="80px">
+  </div>
 </body>
 </html>
