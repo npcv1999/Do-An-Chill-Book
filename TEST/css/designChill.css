@@ -54,7 +54,7 @@ body{
 .search-box
 {
 	display:inline-flex;
-	width:800px;
+	width:auto;
 }
 .menu-bar
 {
@@ -157,7 +157,7 @@ body{
 	margin-bottom:auto;
 	height:500px;
 	width:15%;
-	font-size:14px;
+	font-size:18px;
 	float:left;
 	z-index:2;
 	background-color:#F3C246;
